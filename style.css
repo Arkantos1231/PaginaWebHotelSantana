@@ -94,7 +94,7 @@ a{
 }
 
 #navbar h1 a {
-    color: #fec281;
+    color: #0d3269;
 }
 
 #navbar ul{
@@ -114,19 +114,20 @@ a{
 
 #navbar ul li a.current,
 #navbar ul li a.current:hover{
-    color: #fda90f;
+    color: white;
+    background-color: #0d3269;
 }
 
 /*Showcase*/
 
 .showcase {
-    background: url(https://lh3.googleusercontent.com/p/AF1QipN5pUeN-Mu1rvrgVIgx6Q93gzSbejcCPtipw9Pz=w1080-h608-p-no-v0);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(/Images/logo_hotel.jpg);  
     background-position: center;
-    padding: 190px 60px;
-    height: 600px;
+    background-size: cover;
+    padding: 190px;
     text-align: center;
+    height: 600px;
+    background-repeat: no-repeat;  
 }
 
 .showcase h1,
@@ -185,6 +186,55 @@ font-weight: lighter;
 #features h3{
     text-transform: uppercase;
 }
+
+/*About*/
+
+#about{
+    background-color: #0d3269;    
+}
+
+#about .about-content {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+#about .about-content h1{
+    font-weight:lighter;
+    padding-bottom: 20px;
+}
+
+#about .about-img{
+    float: right;
+    width: 50%;
+}
+
+#about .about-img img{
+    width: 100%;
+}
+
+/*Testimonials*/
+
+#testimonio{
+    background: url(https://musselwhitemarketing.com/wp-content/uploads/2020/11/Musselwhite-Marketing-5-Star-Reviews.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+#testimonio h2{
+    background-position: center;
+    text-align: center;
+    color: black; 
+    font-weight: lighter;
+    background-color: #4d4d4d;
+    width: 500px;
+    border-radius: 25px;
+    
+      
+}
+
+
 
 /*Footer*/
 #mainfooter{
