@@ -133,19 +133,43 @@ a{
 .slider-frame ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
-	
+	width: 400%;	
 	animation: slide 20s infinite alternate ease-in-out;
 }
 
-.slider-frame li {
+.slider-frame li {  
+    height: 700px;  
+    text-align: center;
+    background-size: cover;
 	width: 100%;
 	list-style: none;
+    
 }
 
-.slider-frame img {    
-	width: 100%;
+.li-1{
+    background-image: url(Images/habitacion_solitaria.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;    
 }
+
+.li-2{
+    background-image: url(Images/habitacion_doble.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;     
+}
+
+.li-3{
+    background-image: url(Images/habitacion_familiar.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;     
+}
+
+.li-4{
+    background-image: url(Images/logo_hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;     
+}
+
 
 
 
@@ -407,7 +431,71 @@ a{
 
 
 /*Footer*/
+
 #mainfooter{
+    background-color: #0d3269;
+}
+
+#mainfooter ul{
+    list-style-type: none;
+}
+
+#mainfooter .contact-us h1{
+
+    font-weight: lighter;
+}
+
+#mainfooter img{
+
+    height: 50px;
+
+}
+
+#mainfooter .contact-us{
+    font-weight: lighter;
+    padding-left: 25%;
+    float: left;
+    
+}
+
+#mainfooter .contact-us .rrss{
+    font-weight: lighter;
+    padding-top: 5%;
+}
+
+#mainfooter .contact-us .phone{
+
+    padding-top: 7px;
+
+}
+
+#mainfooter .contact-us .social{
+    padding-top: 8px;
+}
+#mainfooter .contact-us .social li{
+    padding-right: 3%;
+    display: inline-block;
+}
+
+
+#mainfooter .where-to-find h1{
+    font-weight: lighter;
+    margin-right: 25%;
+    float: right;
+    
+}
+
+#mainfooter .map{
+    padding-top: 1%;
+    margin-right: 26.5%;
+    float: right;
+    width: 350px;
+    height: 200px;
+}
+
+#mainfooter p{
+    
+    padding-top: 2%;
     text-align: center;
-    color: #4d4d4d;
+    
 }
