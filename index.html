@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,37 +24,62 @@
             </div>            
         </nav>                       
     </header>
+
+<!-- SLIDESHOW-->
+    <div class="slider-frame">
+        <ul>
+            <li><img src="Images/habitacion_solitaria.jpeg" alt=""></li>
+            <li><img src="Images/habitacion_doble.jpeg" alt=""></li>
+            <li><img src="Images/habitacion_familiar.jpeg" alt=""></li>
+            <li><img src="Images/logo_hotel.jpg" alt=""></li>
+        </ul>
+    </div>
+    
+
+<!-- SHOWCASE -->
+  
     <section>
         <div class="showcase" class="py-80">
             <div class="container">
                 <h1>Bienvenido al Hotel Santana fusa</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Asperiores consequuntur reiciendis modi voluptates eius atque unde porro 
-                    inventore sapiente! Dolorem.</p>
+                <h>Un hotel perecto  para aquellos que buscan un lugar cómodo y acogedor para alojarse durante su estadía. 
+                    Este hotel se destaca por su ambiente familiar y amigable, que lo hace ideal para familias y grupos 
+                    grandes que buscan pasar un tiempo juntos.  El Hotel Santana Fusa ofrece excelentes precios y ofertas 
+                    especiales, lo que lo convierte en una opción perfecta para aquellos que buscan un hotel con una excelente 
+                    relación calidad-precio.</p>
+                <p></p>
                 <a href="about.html" class="btn btn-light">Acerca de Nosotros</a>
             </div>
         </div>
-
     </section>
 
-    <section id="reservation" class="py-30">
-        <div class="container">
-            <h3>Haz tu reserva ya mismo</h3>
-            <a href="reserve.html" class="btn btn-dark">Haz tu reserva</a>
-        </div>
+<!-- WHAT WE OFFER -->  
 
-        
+    <section id="offer">
+        <h1>¿Que ofrecemos?</h1>
+        <div class="logo-container">
+            <div class="row">
+              <div class="column"><p>Protocolos de bioseguridad</p>  <img src="Images/logo_bioseguridad.png" alt=""></div>
+              <div class="column"><p>Wi-fi</p><img src="Images/logo_wifi.png" alt=""></div>
+              <div class="column"><p>Servicio 24/7</p><img src="Images/logo_24-7.png" alt=""></div>
+            </div>
+            <div class="row">
+              <div class="column"><p>Espacio libre de humo</p><img src="Images/logo_fumar.png" alt=""></div>
+              <div class="column"><p>Cuartos para todo tipo de clientes</p><img src="Images/logo_familia.png" alt=""></div>
+              <div class="column"><p>Servicio a la habitación</p><img src="Images/logo_service.png" alt=""></div>
+            </div>
+          </div>        
     </section>
+
+<!-- FEATURES --> 
 
     <section id="features" >
         <div class="box features-1">
             <div class="colorino">
                 <div class="colorino-text">
-                    <h3>Personal</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Cum laboriosam placeat optio reprehenderit facilis nesciunt 
-                        maiores soluta voluptatibus! Quisquam accusamus molestias deserunt
-                        temporibus labore ad quia ipsum nihil voluptatum provident?
+                    <h3>Habitacion Personal</h3>
+                    <p>Las habitaciónes personales son unas cómodas y acogedoras habitaciónes individuales con 
+                        una cama sencilla, baño privado, escritorio, televisión y ducha caliente.
                     </p>
                 </div>                
             </div>            
@@ -61,11 +87,10 @@
         <div class="box features-2">
             <div class="colorino">
                 <div class="colorino-text">
-                    <h3>Personal</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Cum laboriosam placeat optio reprehenderit facilis nesciunt 
-                        maiores soluta voluptatibus! Quisquam accusamus molestias deserunt
-                        temporibus labore ad quia ipsum nihil voluptatum provident?
+                    <h3>Habitación doble</h3>
+                    <p>Una espaciosa habitación doble con una cama grande y cómoda para dos personas, baño privado, 
+                        escritorio, televisión, ducha caliente y una decoración moderna y acogedora para garantizar 
+                        una estancia confortable y placentera.
                     </p>
                 </div>                
             </div>
@@ -73,18 +98,29 @@
         <div class="box features-3">
             <div class="colorino">
                 <div class="colorino-text">
-                    <h3>Personal</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Cum laboriosam placeat optio reprehenderit facilis nesciunt 
-                        maiores soluta voluptatibus! Quisquam accusamus molestias deserunt
-                        temporibus labore ad quia ipsum nihil voluptatum provident?
+                    <h3>Habitación Familiar</h3>
+                    <p>Perfecta para alojar a 4 o más personas, con camas individuales o una combinación de camas 
+                        individuales y dobles con camarotes, baño privado, escritorio, televisión, ducha caliente y una 
+                        decoración moderna y acogedora para garantizar una estancia cómoda y agradable para toda 
+                        la familia o grupo.
                     </p>
                 </div>                
             </div>
         </div>
     </section>
-
     <div class="clr"></div>
+<!-- RESERVATION --> 
+
+    <section id="reservation" class="py-30">
+        <div class="container">
+            <h2>Haz tu reserva ya mismo</h2>
+            <a href="reserve.html" class="btn btn-dark">Haz tu reserva</a>
+        </div>        
+    </section>
+
+
+
+    
 
     <footer id="mainfooter" class="py-30">
         <p>

@@ -8,7 +8,7 @@
 
 html,
 body{
-    font-family: 'Itim', cursive;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
 }
 
@@ -86,6 +86,11 @@ a{
 
 /* Navbar*/
 
+#navbar {
+
+    background-color: #0d3269;
+}
+
 #navbar .logo{
     font-size: 2.3rem;
     float: left;
@@ -107,6 +112,7 @@ a{
 }
 
 #navbar ul li a{
+    color: white;
     display: block;
     padding: 20px;
     text-align: center;
@@ -114,19 +120,59 @@ a{
 
 #navbar ul li a.current,
 #navbar ul li a.current:hover{
-    color: white;
-    background-color: #0d3269;
+    color: #0d3269;
+    background-color: white;
 }
+
+/*Slideshow*/
+.slider-frame {
+    height: 700px;	
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {    
+	width: 100%;
+}
+
+
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
 
 /*Showcase*/
 
 .showcase {
-    background: url(/Images/logo_hotel.jpg);  
+    color:#4d4d4d;
+    background-color: white;
     background-position: center;
     background-size: cover;
-    padding: 190px;
-    text-align: center;
-    height: 600px;
+    padding: 2%;
+    text-align: center;    
     background-repeat: no-repeat;  
 }
 
@@ -137,28 +183,65 @@ a{
 
 .showcase h1{
 
-text-transform: uppercase;
-font-weight: lighter;
-}
-
-/*Reservation*/
-#reservation{
-    margin: 28px;
-}
-#reservation h3{
-    float: left;
-    margin-left: 200px;
-    margin-top: 10px;
+    text-transform: uppercase;
     font-weight: lighter;
-    color: #4d4d4d;
 }
 
-#reservation a{
-    float: right;
-    margin-right: 200px;
+.showcase img{
+    height: 250px;
+}
+
+/*logo-offer*/
+#offer {
+    padding-bottom: 2%;
+}
+
+#offer h1{
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.logo-container {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+  
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.logo-container .row .column img{
+    height: 100px;
+
 }
 
 /* Features*/
+
+#features{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
 .colorino{
     background-color: rgba(3, 5, 3, 0.505);
@@ -166,8 +249,9 @@ font-weight: lighter;
 }
 
 #features .features-1{
+    
     padding: 0;
-    background: url(https://cdn1.coppel.com/images/catalog/pm/3092063-1.jpg);
+    background: url(Images/habitacion_solitaria.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -176,17 +260,19 @@ font-weight: lighter;
 
 
 #features .features-2{
+    
     padding: 0;
-    background: url(https://ebani.com.co/wp-content/uploads/2021/07/Cama-Libia-Doble-Macula-Ebani-Colombia-tienda-online-de-decoracion-y-mobiliario-HOGAR-VENECIA.jpg);
+    background: url(Images/habitacion_doble.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 
 #features .features-3{
     padding: 0;
-    background: url(http://3.bp.blogspot.com/-0FBTxuuJ-jA/Vj3s-iYZSBI/AAAAAAAAElE/B_uJD6txbNI/s1600/habitaci%25C3%25B3n-dormir-familia.jpg);
+    background: url(Images/habitacion_familiar.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -196,10 +282,30 @@ font-weight: lighter;
     padding: 50px;
 }
 
+
+/*Reservation*/
+#reservation{
+    padding-top: 2%;
+}
+#reservation h2{
+    float: left;    
+    font-weight: lighter;
+    color: #4d4d4d;
+}
+
+#reservation a{
+    float: right;
+    margin-right: 200px;
+    background-color: #0d3269;    
+}
+
+
+
 /*About*/
 
 #about{
-    background-color: #0d3269;    
+    background-color: #0d3269;
+    
 }
 
 #about .about-content {
@@ -208,20 +314,20 @@ font-weight: lighter;
     padding-right: 20px;
     padding-left: 44px;
     margin-top: 10%;
-    float: left;
     font-weight:lighter;
     padding-bottom: 20px;
 }
 
 
 #about .about-content h1{
+    text-transform: uppercase;
     width: 560px;
     padding-bottom: 30px;
 }
 
 #about .about-content p{
     text-align: justify;
-    width: 510px;
+    width: 104%;
 }
 
 #about .about-img{
@@ -230,25 +336,52 @@ font-weight: lighter;
 }
 
 #about .about-img img{
+
+    width: 100%;
+    height: 100%;
+
 }
+
+
+/*Finding*/
+
+
+#find{
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    background-position: center;
+}
+
+#find .map h2{
+    color: black;
+    padding-bottom : 40px;
+
+}
+
+
 
 /*Testimonials*/
 
-#testimonio{
-
-    background: url(https://musselwhitemarketing.com/wp-content/uploads/2020/11/Musselwhite-Marketing-5-Star-Reviews.png);
+#testimonio{    
+    background: url(Images/testimonio.jpg);
+    background-color: rgba(3, 5, 3, 0.505);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px;
+}
+
+#testimonio .opinan{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(3, 5, 3, 0.505);
+    padding: 40px;    
+     
 }
 
 #testimonio h2{
     background-position: center;
-    text-align: center;
-    color: black; 
-    font-weight: lighter;
-    background-color: #4d4d4de0;
+    text-align: center; 
     width: 500px;
     height: 45px;
     border-radius: 25px;  
