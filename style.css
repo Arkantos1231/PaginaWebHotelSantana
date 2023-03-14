@@ -125,6 +125,21 @@ a{
 }
 
 /*Slideshow*/
+.slider-frame .welcome{
+    text-transform: uppercase;
+    background-color: rgba(3, 5, 3, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 7.07em;
+    color: white;
+
+}
+
+
 .slider-frame {
     height: 700px;	
 	overflow: hidden;
@@ -272,35 +287,35 @@ a{
     height: 250px;
 }
 
-#features .features-1{
+#features .features-1{  
     
     padding: 0;
     background: url(Images/habitacion_solitaria.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 
 
 #features .features-2{
-    
+        
     padding: 0;
     background: url(Images/habitacion_doble.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 
 
 #features .features-3{
+     
     padding: 0;
     background: url(Images/habitacion_familiar.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 
 .colorino-text{
     padding: 50px;
@@ -328,8 +343,8 @@ a{
 /*About*/
 
 #about{
-    background-color: #0d3269;
     
+    color: #4d4d4d;
 }
 
 #about .about-content {
@@ -428,74 +443,77 @@ a{
     display: block;
 }
 
-
-
 /*Footer*/
+
 
 #mainfooter{
     background-color: #0d3269;
-}
-
-#mainfooter ul{
-    list-style-type: none;
-}
-
-#mainfooter .contact-us h1{
-
-    font-weight: lighter;
-}
-
-#mainfooter img{
-
-    height: 50px;
-
-}
-
-#mainfooter .contact-us{
-    font-weight: lighter;
-    padding-left: 25%;
-    float: left;
     
 }
 
-#mainfooter .contact-us .rrss{
-    font-weight: lighter;
-    padding-top: 5%;
+#footer {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#mainfooter .contact-us .phone{
+#footer .contact-us{
+    float: left;
+    text-align: left;
+    padding-left: 20%;    
+}
 
+#footer .contact-us .phone{
     padding-top: 7px;
-
 }
 
-#mainfooter .contact-us .social{
+#footer .contact-us h1{
+    font-weight: lighter;
+}
+
+#footer .contact-us .phone {
+    list-style: none;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer .contact-us .rrss{
+    padding-top: 29px;
+}
+
+#footer .contact-us .social{
     padding-top: 8px;
 }
-#mainfooter .contact-us .social li{
-    padding-right: 3%;
+
+#footer .contact-us .social li{
     display: inline-block;
 }
 
-
-#mainfooter .where-to-find h1{
-    font-weight: lighter;
-    margin-right: 25%;
-    float: right;
-    
+#footer .contact-us .social img{
+    height: 50px;
 }
 
-#mainfooter .map{
-    padding-top: 1%;
-    margin-right: 26.5%;
+#footer .where-to-find{  
     float: right;
-    width: 350px;
+    text-align: left;
+    padding-right: 20%;    
+}
+
+#footer .where-to-find h1{
+    font-weight: lighter;
+}
+
+#footer .where-to-find .map{
+    padding-top: 7px;
+    width: 368px;
     height: 200px;
 }
 
-#mainfooter p{
-    
+#mainfooter p{    
     padding-top: 2%;
-    text-align: center;
-    
+    text-align: center;    
 }
+
