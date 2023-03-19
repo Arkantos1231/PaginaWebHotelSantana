@@ -1,0 +1,91 @@
+
+/*Utility Classes*/
+
+.box{
+    float: none;
+    width: 100%;    
+}
+
+/*Navbar*/
+
+#navbar {
+
+    background-color: #0d3269;
+    text-align: center;
+}
+
+#navbar .logo{
+    font-size: 2.3rem;
+    float: none;
+    margin-left: 0px;
+}
+
+
+
+#navbar ul{
+    float: none;
+    list-style: none;
+    display: inline-block;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a.current,
+#navbar ul li a.current:hover{
+    color: #0d3269;
+    background-color: white;
+}
+
+/*Slideshow*/
+
+.slider-frame {
+    height: 300px;
+    overflow: hidden;	
+}
+
+.slider-frame li{
+    height: 300px;
+}
+
+.slider-frame .welcome {
+    font-size: 2.07em;    
+}
+
+
+/* Features*/
+
+.colorino{
+    background-color: rgba(3, 5, 3, 0.505);
+    height: 250px;
+}
+
+#features{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/*Reservation*/
+#reservation div{
+    
+    text-align: center;
+}
+
+#reservation h2{
+    padding-bottom: 5%;
+    float: none;
+}
+
+#reservation a{
+    
+    float: none;    
+}

@@ -70,7 +70,6 @@ a{
     text-align: center;
     padding: 50px;    
     height: 250px;
-
 }
 
 .box h3{
@@ -125,14 +124,18 @@ a{
 }
 
 /*Slideshow*/
-.slider-frame .welcome{
+
+.slider-frame{
+    position: relative;
+}
+.slider-frame .welcome {
     text-transform: uppercase;
     background-color: rgba(3, 5, 3, 0.7);
-    position: absolute;
+    position: absolute;    
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
     text-align: center;
     font-size: 7.07em;
     color: white;
@@ -162,25 +165,25 @@ a{
 }
 
 .li-1{
-    background-image: url(Images/habitacion_solitaria.jpeg);
+    background-image: url(Images/frontal_hotel.jpeg);
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 .li-2{
-    background-image: url(Images/habitacion_doble.jpeg);
+    background-image: url(Images/habitacion_solitaria.jpeg);
     background-repeat: no-repeat;
     background-position: center;     
 }
 
 .li-3{
-    background-image: url(Images/habitacion_familiar.jpeg);
+    background-image: url(Images/habitacion_doble.jpeg);
     background-repeat: no-repeat;
     background-position: center;     
 }
 
 .li-4{
-    background-image: url(Images/logo_hotel.jpg);
+    background-image: url(Images/habitacion_familiar.jpeg);
     background-repeat: no-repeat;
     background-position: center;     
 }
@@ -283,8 +286,10 @@ a{
 }
 
 .colorino{
+    position: relative;
     background-color: rgba(3, 5, 3, 0.505);
-    height: 250px;
+    height: 100%;
+    
 }
 
 #features .features-1{  
@@ -318,7 +323,11 @@ a{
 
 
 .colorino-text{
-    padding: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    
+            
 }
 
 
@@ -326,6 +335,12 @@ a{
 #reservation{
     padding-top: 2%;
 }
+
+#reservation div{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 #reservation h2{
     float: left;    
     font-weight: lighter;
@@ -334,7 +349,6 @@ a{
 
 #reservation a{
     float: right;
-    margin-right: 200px;
     background-color: #0d3269;    
 }
 
