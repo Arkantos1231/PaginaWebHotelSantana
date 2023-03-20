@@ -123,6 +123,10 @@ a{
     background-color: white;
 }
 
+#navbar ul li a:hover{
+    background-color: #071b38;
+}
+
 /*Slideshow*/
 
 .slider-frame{
@@ -363,12 +367,12 @@ a{
 
 #about .about-content {
     float: left;
-    width: 50%;
+    width: 60%;
     padding-right: 20px;
     padding-left: 44px;
-    margin-top: 10%;
     font-weight:lighter;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -380,12 +384,12 @@ a{
 
 #about .about-content p{
     text-align: justify;
-    width: 104%;
+    width: 100%;
 }
 
 #about .about-img{
-    padding-right: 5%;
     float: right;
+    width: 22.4%;
 }
 
 #about .about-img img{
@@ -400,6 +404,7 @@ a{
 
 
 #find{
+    background-color: #0d3269;
     padding: 40px;
     text-align: center;
     margin: auto;
@@ -407,9 +412,13 @@ a{
 }
 
 #find .map h2{
-    color: black;
-    padding-bottom : 40px;
+    
+    color: white;
+    padding-bottom : 2%;
+}
 
+#find .locator{
+    width: 100%;
 }
 
 
@@ -435,26 +444,24 @@ a{
 #testimonio h2{
     background-position: center;
     text-align: center; 
-    width: 500px;
-    height: 45px;
-    border-radius: 25px;  
+    width: 500px;  
     margin: auto;
       
 }
 
 .testimonio-content{
-    padding: 20px;  
-    border-radius: 25px;
-    width: 700px;
+    padding: 20px;    
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .testimonio-content img{
-    border-radius: 7px;
+    border-radius: 25px;
     margin: auto;
-    display: block;
+    width: 50%;
+    
 }
 
 /*Footer*/
@@ -529,5 +536,23 @@ a{
 #mainfooter p{    
     padding-top: 2%;
     text-align: center;    
+}
+
+/*Reservation*/
+
+#reservation-final {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#reservation-final h1{
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+#reservation-final img{ 
+    padding-top: 7px;
+    height: 90px;
 }
 
